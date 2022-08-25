@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WMT_MS_Capabilities version="1.1.1" updateSequence="63258">
+	<Service>
+		<Name>OGC:WMS</Name>
+		<Title>CSR Web Map Service</Title>
+		<Abstract>Compliant WMS Response</Abstract>
+		<KeywordList>
+			<Keyword>WFS</Keyword>
+			<Keyword>WMS</Keyword>
+			<Keyword>GEOSERVER</Keyword>
+		</KeywordList>
+		<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoserver.sourceforge.net/html/index.php"></OnlineResource>
+		<ContactInformation>
+			<ContactPersonPrimary>
+				<ContactPerson>GITHUB owner</ContactPerson>
+				<ContactOrganization>GITHUB owner</ContactOrganization>
+			</ContactPersonPrimary>
+			<ContactPosition>Chief geographer</ContactPosition>
+			<ContactAddress>
+				<AddressType>Work</AddressType>
+				<Address></Address>
+				<City>Alexandria</City>
+				<StateOrProvince></StateOrProvince>
+				<PostCode></PostCode>
+				<Country>Egypt</Country>
+			</ContactAddress>
+			<ContactVoiceTelephone></ContactVoiceTelephone>
+			<ContactFacsimileTelephone></ContactFacsimileTelephone>
+			<ContactElectronicMailAddress>claudius.ptolomaeus@gmail.com</ContactElectronicMailAddress>
+		</ContactInformation>
+		<Fees>NONE</Fees>
+		<AccessConstraints>NONE</AccessConstraints>
+	</Service>
+	<Capability>
+		<Request>
+			<GetCapabilities>
+				<Format>application/vnd.ogc.wms_xml</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Get>
+						<Post>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Post>
+					</HTTP>
+				</DCPType>
+			</GetCapabilities>
+			<GetMap>
+				<Format>image/png</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Get>
+					</HTTP>
+				</DCPType>
+			</GetMap>
+			<GetFeatureInfo>
+				<Format>text/plain</Format>
+				<Format>application/vnd.ogc.gml</Format>
+				<Format>application/vnd.ogc.gml/3.1.1</Format>
+				<Format>text/html</Format>
+				<Format>application/json</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Get>
+						<Post>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Post>
+					</HTTP>
+				</DCPType>
+			</GetFeatureInfo>
+			<DescribeLayer>
+				<Format>application/vnd.ogc.wms_xml</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Get>
+					</HTTP>
+				</DCPType>
+			</DescribeLayer>
+			<GetLegendGraphic>
+				<Format>image/png</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Get>
+					</HTTP>
+				</DCPType>
+			</GetLegendGraphic>
+			<GetStyles>
+				<Format>application/vnd.ogc.sld+xml</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://maps.csr.ufmg.br:80/geoserver/wms?SERVICE=WMS&amp;"></OnlineResource>
+						</Get>
+					</HTTP>
+				</DCPType>
+			</GetStyles>
+		</Request>
+		<Exception>
+			<Format>application/vnd.ogc.se_xml</Format>
+			<Format>application/vnd.ogc.se_inimage</Format>
+		</Exception>
+		<VendorSpecificCapabilities>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:hidrografia</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:hidrografia</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:areas_risco_itaoca</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:areas_risco_itaoca</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:situacao_app</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:situacao_app</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:usos</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:usos</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:imoveis</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:imoveis</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:sub_bacias</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:sub_bacias</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:perimetro_municipal</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:perimetro_municipal</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<CustomLayer>
+				<Name>GH:sistema_produtor</Name>
+				<Title>sistema_produtor</Title>
+				<Operation type="csv">1</Operation>
+			</CustomLayer>
+			<CustomLayer>
+				<Name>GH:captacoes_agua</Name>
+				<Title>captacoes_agua</Title>
+				<Operation type="csv">1</Operation>
+			</CustomLayer>
+			<CustomLayer>
+				<Name>GH:nascentes</Name>
+				<Title>nascentes</Title>
+				<Operation type="csv">1</Operation>
+			</CustomLayer>
+		</VendorSpecificCapabilities>
+		<UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"></UserDefinedSymbolization>
+		<Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:hidrografia</Name>
+				<Title>hidrografia</Title>
+				<Abstract>GH:hidrografia ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group˸shp˸˸˸//github.com/Ronaldo-Sanches/Mappia_Example/releases/download/Map_Download/hidrografia.zip˸notListing˸˸maxZoom˸5</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="-48.934093146836666" miny="-24.62976034622138" maxx="-48.78426932429676" maxy="-24.58957576320601"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="709183.5433656581" miny="7274474.731674986" maxx="724294.6287721449" maxy="7278691.971667174"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=hidrografia"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:areas_risco_itaoca</Name>
+				<Title>areas_risco_itaoca</Title>
+				<Abstract>GH:areas_risco_itaoca ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group˸shp˸˸˸//github.com/Ronaldo-Sanches/Mappia_Example/releases/download/Map_Download/areas_risco_itaoca.zip˸notListing˸˸maxZoom˸5</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="-48.86364900094844" miny="-24.657135865677223" maxx="-48.78355433101509" maxy="-24.595413688783037"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="716310.1531830664" miny="7271332.507868333" maxx="724316.3417346654" maxy="7278044.746484102"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=areas_risco_itaoca"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:situacao_app</Name>
+				<Title>situacao_app</Title>
+				<Abstract>GH:situacao_app ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group˸shp˸˸˸//github.com/Ronaldo-Sanches/Mappia_Example/releases/download/Map_Download/situacao_app.zip˸notListing˸˸maxZoom˸5</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="-48.93416943901282" miny="-24.62989427787623" maxx="-48.783773338022804" maxy="-24.589754083328085"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="709175.5057662656" miny="7274460.013519602" maxx="724344.6287721449" maxy="7278671.407928383"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=situacao_app"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:usos</Name>
+				<Title>usos</Title>
+				<Abstract>GH:usos ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group˸shp˸˸˸//github.com/Ronaldo-Sanches/Mappia_Example/releases/download/Map_Download/usos.zip˸notListing˸˸maxZoom˸5</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="-48.93416943901282" miny="-24.62989427787623" maxx="-48.78369694792928" maxy="-24.589752959148672"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="709175.5057662656" miny="7274460.013519602" maxx="724352.366150608" maxy="7278671.407928383"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=usos"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:imoveis</Name>
+				<Title>imoveis</Title>
+				<Abstract>GH:imoveis ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group˸shp˸˸˸//github.com/Ronaldo-Sanches/Mappia_Example/releases/download/Map_Download/imoveis.zip˸notListing˸˸maxZoom˸5</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="-48.93416943901282" miny="-24.62989427787623" maxx="-48.78369694792928" maxy="-24.589752959148672"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="709175.5057662656" miny="7274460.013519602" maxx="724352.366150608" maxy="7278671.407928383"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=imoveis"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:sub_bacias</Name>
+				<Title>sub_bacias</Title>
+				<Abstract>GH:sub_bacias ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group˸shp˸˸˸//github.com/Ronaldo-Sanches/Mappia_Example/releases/download/Map_Download/sub_bacias.zip˸notListing˸˸maxZoom˸5</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="-48.949219270000015" miny="-24.675942267421625" maxx="-48.73075171900013" maxy="-24.551539449999986"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="-48.949219270000015" miny="-24.675942267421625" maxx="-48.73075171900001" maxy="-24.551539450000007"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=sub_bacias"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:perimetro_municipal</Name>
+				<Title>perimetro_municipal</Title>
+				<Abstract>GH:perimetro_municipal ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group˸shp˸˸˸//github.com/Ronaldo-Sanches/Mappia_Example/releases/download/Map_Download/perimetro_municipal.zip˸notListing˸˸maxZoom˸5</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="-48.95029822613579" miny="-24.677495485574312" maxx="-48.7300785556706" maxy="-24.549259670744487"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="707607.0461288992" miny="7269209.545447836" maxx="729696.5636771582" maxy="7283071.381348233"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=perimetro_municipal"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+		</Layer>
+	</Capability>
+</WMT_MS_Capabilities>
